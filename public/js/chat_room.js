@@ -37,7 +37,7 @@
     })
 
     socket.on("typing", data => {
-        info.textContent = "  " + data.username + " is typing..."
+        info.textContent = data.username + " is typing..."
         setTimeout(() => { info.textContent = ''}, 5000)
     })
 })();
